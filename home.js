@@ -21,7 +21,15 @@ export default class CardImageExample extends Component {
           </Body>
         </Header>
 <Content>
-                
+                      <Fab
+            active={'true'}
+            direction="up"
+            containerStyle={{ }}
+            style={{ backgroundColor: '#5067FF' }}
+            position="bottomRight">
+            <Icon name="add" />
+    
+          </Fab>
 
                       <List>
             <ListItem>
@@ -92,17 +100,10 @@ export default class CardImageExample extends Component {
               </Right>
             </ListItem>
           </List> 
+                  <View style={{ flex: 1 }}>
 
+          </View>
         </Content>
-                        <Fab
-            active={'true'}
-            direction="down"
-            containerStyle={{ }}
-            style={{ backgroundColor: '#5067FF', margin:55 }}
-            position="bottomRight">
-            <Icon name="add" />
-    
-          </Fab>
         <Footer>
           <FooterTab>
             <Button vertical active>
@@ -123,7 +124,7 @@ export default class CardImageExample extends Component {
             </Button>
           </FooterTab>
         </Footer>
-
+          
       </Container>
     );
   }
